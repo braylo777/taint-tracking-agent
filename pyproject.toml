@@ -1,0 +1,13 @@
+[project]
+name = "taint-tracking-agent"
+version = "0.1.0"
+description = "Taint-tracking tool agent with planner/data separation and a policy engine for sensitive tool calls"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
